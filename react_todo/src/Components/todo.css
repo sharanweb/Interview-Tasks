@@ -1,0 +1,12 @@
+.listing{
+    width: 33%;
+    border: 1px solid red;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+/* button{
+    height: 25px;
+} */
