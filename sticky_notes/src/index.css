@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.note{
+  background-color: #fef68a;
+  /* margin-bottom: 10px; */
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  white-space: pre-wrap;
+}
+
+.notes_list{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+}
+.note.new{
+  background-color: rgb(122, 132, 184);
+}
+
+textarea{
+  border: none;
+  resize: none;
+  background-color: rgb(122, 132, 184);
+}
+
+textarea:focus{
+  outline: none;
+}
+
+.savenote{
+  background-color: rgb(192, 182, 53);
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+
+.savenote:hover{
+  background-color: coral;
+  cursor: pointer;
+}
+
+.footer1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.App{
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 100vh;
+}
+
+.delete{
+  cursor: pointer;
+}
+
+.delete:hover{
+  color: red;
+  font-size: 20px;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  background-color: rgb(233,233,233);
+  padding: 5px;
+  margin-bottom: 1.5rem;
+}
+
+.search input{
+  border: none;
+  background-color: rgb(233,233,233);
+}
+
+.search input:focus{
+  outline: none
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dark{
+  background-color: black;
+}
+
+.dark h1{
+  color: white;
+}
+
+
