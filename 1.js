@@ -32,9 +32,9 @@
 // let items = [1,2,3,4,5];
 // console.log(sample(items,5));
 
-function reverseStr(str){
-    if(str.length <= 1){
-        return str;
-    }
-    let f
-}
+// function reverseStr(str){
+//     if(str.length <= 1){
+//         return str;
+//     }
+//     let f
+// }
