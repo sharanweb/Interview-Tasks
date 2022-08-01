@@ -1,6 +1,6 @@
 
 import './App.css';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import {Display} from "./Components/display.jsx";
 import {Buttons} from "./Components/button.jsx"
 
@@ -12,8 +12,9 @@ function App() {
     h:0
   })
 
-  const [gap, setGap] = useState();
-  const [status, setStatus] = useState(0);
+  // const [gap, setGap] = useState();
+  const [status, setStatus] = useState(false);
+  const countRef = useRef(null);
 
 
   var updatedMS = time.ms;
@@ -23,10 +24,12 @@ function App() {
 
   const start = () => {
     // runStop();
-    setStatus(1);
-    setGap(setInterval(runStop,10));
+    setStatus(true);
+    countRef.current = (setInterval(runStop,10));
     
   }
+
+  //
 
   
 
@@ -54,20 +57,20 @@ function App() {
   }
 
   const stop = ()=>{
-    clearInterval(gap);
-    setStatus(2);
+    clearInterval(countRef.current);
+    setStatus(false);
 
   }
 
   const reset = ()=>{
-    clearInterval(gap);
+    clearInterval(countRef.current);
     setTime({
       ms:0,
       s:0,
       m:0,
       h:0
     })
-    setStatus(0);
+    setStatus(false);
 
 
   }
