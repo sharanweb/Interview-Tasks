@@ -13,6 +13,7 @@ function App() {
   })
 
   const [gap, setGap] = useState();
+  const [status, setStatus] = useState(0);
 
 
   var updatedMS = time.ms;
@@ -22,7 +23,9 @@ function App() {
 
   const start = () => {
     // runStop();
+    setStatus(1);
     setGap(setInterval(runStop,10));
+    
   }
 
   
@@ -52,6 +55,7 @@ function App() {
 
   const stop = ()=>{
     clearInterval(gap);
+    setStatus(2);
 
   }
 
@@ -63,13 +67,14 @@ function App() {
       m:0,
       h:0
     })
+    setStatus(0);
 
 
   }
   return (
     <div className="App">
       <Display time={time}></Display>
-      <Buttons start={start} stop={stop} reset={reset}></Buttons>
+      <Buttons start={start} stop={stop} reset={reset} status={status}></Buttons>
       
     </div>
   );
