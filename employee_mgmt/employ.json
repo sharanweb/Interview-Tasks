@@ -1,0 +1,36 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Sharan",
+      "email": "sharan@gmail.com",
+      "city": "jkd",
+      "department": "web",
+      "salary": 1000
+    },
+    {
+      "name": "dfg",
+      "email": "sg@gmail.com",
+      "city": "jkd",
+      "department": "web",
+      "salary": "2000",
+      "id": 2
+    },
+    {
+      "name": "Sharan",
+      "email": "shir@gmail.com",
+      "city": "ludigfiluuawgsdf",
+      "department": "data",
+      "salary": "20000",
+      "id": 3
+    },
+    {
+      "name": "Sharan",
+      "email": "s@gmail.com",
+      "city": "hoh",
+      "department": "web",
+      "salary": "5000",
+      "id": 4
+    }
+  ]
+}
