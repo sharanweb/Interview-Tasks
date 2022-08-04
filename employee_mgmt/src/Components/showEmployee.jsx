@@ -35,7 +35,7 @@ export const ShowDetail = ()=>{
         var newdata = [...filter];
         if(e.target.value === "asc"){
            newdata.sort((a,b)=>a.salary - b.salary)
-        }else if(e.target.value === "des"){
+        }else if(e.target.value === "dec"){
            newdata.sort((a,b)=>b.salary - a.salary);
         }
     setFilter(newdata)
@@ -78,7 +78,7 @@ export const ShowDetail = ()=>{
                     </thead>
                     <tbody>
                         {
-                            data && filter.map((el)=>(
+                             filter.map((el)=>(
                                 <tr key={el.id}>
                                     <td>{el.name}</td>
                                     <td>{el.email}</td>
